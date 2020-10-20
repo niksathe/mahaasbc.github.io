@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mahaasbc Dashboard</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/colorpicker.css" />
+<link rel="stylesheet" href="css/datepicker.css" />
+<link rel="stylesheet" href="css/uniform.css" />
+<link rel="stylesheet" href="css/select2.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Mahaasbc Dashboard</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
+        <li class="divider"></li>
+        <li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
+        <li class="divider"></li>
+        <li><a href="#"><i class="icon-key"></i> Log Out</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+    <li class=""><a title="" href="#"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+<div id="search">
+  <input type="text" placeholder="Search here..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-list"></i>Forms</a>
+  <ul>
+    <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li class="submenu active"> <a href="#"><i class="icon icon-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+      <ul>
+        <li><a href="form-common.html">बँकेचा तपशील</a></li>
+        <li><a href="form-validation.html">तपशील पत्ता</a></li>
+        <li><a href="form-wizard.html">महिला गट</a></li>
+      </ul>
+    </li>
+    
+</div>
+
+<!--close-left-menu-stats-sidebar-->
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="tip-bottom">Forms</a> <a href="#" class="current">तपशील पत्ता</a> </div>
+  <h1>पत्ता</h1>
+</div>
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>पत्ता</h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form action="#" method="get" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label">पत्ता :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="Address Line" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">शहर :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="City" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">पिन कोड :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="Pin Code" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">तालुका :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="Tal." />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">जिल्हा :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="District" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">राज्य :</label>
+              <div class="controls">
+                <select name="state" class="span11" >
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                
+                  <option value="Arunachal Pradesh ">Arunachal Pradesh </option>
+                
+                  <option value="Assam">Assam</option>
+                
+                  <option value="Bihar">Bihar</option>
+                
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                
+                  <option value="Goa">Goa</option>
+                
+                  <option value="Gujarat">Gujarat</option>
+                
+                  <option value="Haryana">Haryana</option>
+                
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                
+                  <option value="Jammu and Kashmir ">Jammu and Kashmir </option>
+                
+                  <option value="Jharkhand">Jharkhand</option>
+                
+                  <option value="Karnataka">Karnataka</option>
+                
+                  <option value="Kerala">Kerala</option>
+                
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                
+                  <option value="Maharashtra" >Maharashtra</option>
+                
+                  <option value="Manipur">Manipur</option>
+                
+                  <option value="Meghalaya">Meghalaya</option>
+                
+                  <option value="Mizoram">Mizoram</option>
+                
+                  <option value="Nagaland">Nagaland</option>
+                
+                  <option value="Odisha">Odisha</option>
+                
+                  <option value="Punjab">Punjab</option>
+                
+                  <option value="Rajasthan">Rajasthan</option>
+                
+                  <option value="Sikkim">Sikkim</option>
+                
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                
+                  <option value="Telangana">Telangana</option>
+                
+                  <option value="Tripura">Tripura</option>
+                
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                
+                  <option value="Uttarakhand">Uttarakhand</option>
+                
+                  <option value="West Bengal">West Bengal</option>
+                
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                
+                  <option value="Chandigarh">Chandigarh</option>
+                
+                  <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                
+                  <option value="Daman and Diu">Daman and Diu</option>
+                
+                  <option value="Lakshadweep">Lakshadweep</option>
+                
+                  <option value="National Capital Territory of Delhi">National Capital Territory of Delhi</option>
+                
+                  <option value="Puducherry">Puducherry</option>
+                
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+     
+    </div>
+    <div class="span6">
+    </div>
+  </div>
+  
+</div></div>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2020 &copy; MAHAASBC. Made with Love By <a href="#">Dream Designers</a> </div>
+</div>
+<!--end-Footer-part--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-colorpicker.js"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
+<script src="js/jquery.toggle.buttons.js"></script> 
+<script src="js/masked.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.form_common.js"></script> 
+<script src="js/wysihtml5-0.3.0.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/bootstrap-wysihtml5.js"></script> 
+<script>
+	$('.textarea_editor').wysihtml5();
+</script>
+</body>
+</html>
